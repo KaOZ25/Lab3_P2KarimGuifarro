@@ -16,7 +16,7 @@ public class pkmn {
     public pkmn() {
     }
 
-    public pkmn(String tipo, String nombre, int atk, int hp) {
+    public pkmn(String nombre, int atk, int hp,String tipo) {
         this.tipo = tipo;
         this.nombre = nombre;
         this.atk = atk;
@@ -54,5 +54,11 @@ public class pkmn {
     public void setHp(int hp) {
         this.hp = hp;
     }
+
+    @Override
+    public String toString() {
+        return  "nombre=" + nombre + ", tipo=" + tipo + ", atk=" + atk + ", hp=" + hp;
+    }
+    
     
 }

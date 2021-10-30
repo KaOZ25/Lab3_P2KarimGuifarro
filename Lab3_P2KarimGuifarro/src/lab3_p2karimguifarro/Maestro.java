@@ -13,7 +13,7 @@ public class Maestro extends Entrenadores{
     int victorias;
     pkmn Pokemon;
 
-    public Maestro(int victorias, pkmn Pokemon, String nombre, String sexo, int edad) {
+    public Maestro(String nombre, String sexo, int edad,int victorias, pkmn Pokemon) {
         super(nombre, sexo, edad);
         this.victorias = victorias;
         this.Pokemon = Pokemon;
@@ -37,7 +37,7 @@ public class Maestro extends Entrenadores{
 
     @Override
     public String toString() {
-        return "victorias=" + victorias + ", Pokemon=" + Pokemon;
+        return super.toString() + "victorias=" + victorias + ", Pokemon=" + Pokemon;
     }
     
 }
