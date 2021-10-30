@@ -42,6 +42,9 @@ public class Lab3_P2KarimGuifarro {
                     Batalla();
                 }
                 break;
+                case 5:{
+                    k='g';
+                }
             }
         }
     }
